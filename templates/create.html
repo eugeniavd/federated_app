@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Create a New Event</h1>
+
+    <form method="post">
+        <div class="form-group">
+            <label for="attributedTo">Attributed To</label>
+            <input type="text" name="attributedTo" class="form-control" value="{{ attributedTo }}">
+        </div>
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-control" value="{{ name }}">
+        </div>
+
+        <div class="form-group">
+            <label for="content">Content</label>
+            <textarea name="content" class="form-control">{{ content }}</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="startTime">Start Time</label>
+            <input type="text" name="startTime" class="form-control" value="{{ startTime }}">
+        </div>
+
+        <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" name="location" class="form-control" value="{{ location }}">
+        </div>
+
+        <div class="form-group">
+            <label for="updated">Updated</label>
+            <input type="text" name="updated" class="form-control" value="{{ updated }}">
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+{% endblock %}
